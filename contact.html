@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak / Request Project</title>
+    <!-- Google Fonts sama seperti index -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Kontak / Request Project</h1>
+            <p class="lead">Isi form di bawah untuk request pembuatan website atau konsultasi teknologi. Kami akan membalas lewat email.</p>
+
+            <form action="#" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Jenis Layanan:</label>
+                <select id="service" name="service">
+                    <option value="web-development">Pembuatan Website</option>
+                    <option value="consultation">Konsultasi Teknologi</option>
+                    <option value="review">Review Portofolio</option>
+                </select>
+
+                <label for="message">Deskripsi Proyek / Pesan:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <fieldset style="border:0;padding:0;margin:0 0 1rem 0">
+                    <legend style="font-weight:600;margin-bottom:.5rem">Preferensi Kontak:</legend>
+                    <label><input type="radio" name="kontak_method" value="email" checked> Email</label>
+                    <label style="margin-left:1rem"><input type="radio" name="kontak_method" value="wa"> WhatsApp</label>
+                </fieldset>
+
+                <label style="display:flex;align-items:center;gap:.5rem"><input type="checkbox" id="terms" name="terms" required> Saya setuju dengan syarat & ketentuan</label>
+
+                <button type="submit">Kirim Request</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - <a href="https://www.itpln.ac.id/">ITPLN</a></p>
+    </footer>
+</body>
+</html>

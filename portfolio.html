@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data / Portofolio</title>
+    <!-- Google Fonts sama seperti index -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Beranda</a></li>
+                <li><a href="./portfolio.html">Portofolio</a></li>
+                <li><a href="./contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Data Portofolio</h1>
+            <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Preview</th>
+                        <th>Nama Proyek</th>
+                        <th>Tahun Pembuatan</th>
+                        <th>Teknologi yang Digunakan</th>
+                        <th>Status</th>
+                        <th>Link Demo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="preview">
+                            <video width="160" muted preload="metadata" controls>
+                                <source src="./src/video/ObjekRecog_ProjectCV2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>Object Recognition Project</td>
+                        <td>2023</td>
+                        <td>Python, OpenCV</td>
+                        <td>Selesai</td>
+                        <td><a href="./src/video/ObjekRecog_ProjectCV2.mp4" target="_blank">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <td class="preview">
+                            <video width="160" muted preload="metadata" controls>
+                                <source src="./src/video/Zetta Tronian Project.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>Zetta Tronian Project</td>
+                        <td>2023</td>
+                        <td>C#, Unity</td>
+                        <td>Selesai</td>
+                        <td><a href="./src/video/Zetta Tronian Project.mp4" target="_blank">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <td class="preview">
+                            <img src="./src/Robot Avoider_Arduino.jpeg" alt="Robot Avoider" class="portfolio-thumb" width="160">
+                        </td>
+                        <td>Robot Avoider</td>
+                        <td>2024</td>
+                        <td>C++, Arduino</td>
+                        <td>Selesai</td>
+                        <td><a href="./src/Robot Avoider_Arduino.jpeg" target="_blank">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <td class="preview">
+                            <img src="./src/tictactoe_cpp_sfml.png" alt="Tic Tac Toe" class="portfolio-thumb" width="160">
+                        </td>
+                        <td>Game Tic Tac Toe</td>
+                        <td>2024</td>
+                        <td>C++, SFML</td>
+                        <td>Selesai</td>
+                        <td><a href="./src/tictactoe_cpp_sfml.png" target="_blank">Demo</a></td>
+                    </tr>
+                    <tr>
+                        <td class="preview">
+                            <img src="./src/TODO_vite.png" alt="Todo App" class="portfolio-thumb" width="160">
+                        </td>
+                        <td>Todo App</td>
+                        <td>2024</td>
+                        <td>Vue.js, Vite</td>
+                        <td>Selesai</td>
+                        <td><a href="./src/TODO_vite.png" target="_blank">Demo</a></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - <a href="https://www.itpln.ac.id/">ITPLN</a></p>
+    </footer>
+</body>
+</html>
