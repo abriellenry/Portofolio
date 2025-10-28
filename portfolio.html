@@ -21,81 +21,109 @@
 
     <main>
         <div class="container">
-            <h1>Data Portofolio</h1>
-            <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Preview</th>
-                        <th>Nama Proyek</th>
-                        <th>Tahun Pembuatan</th>
-                        <th>Teknologi yang Digunakan</th>
-                        <th>Status</th>
-                        <th>Link Demo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="preview">
-                            <video width="160" muted preload="metadata" controls>
-                                <source src="./src/video/ObjekRecog_ProjectCV2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>Object Recognition Project</td>
-                        <td>2023</td>
-                        <td>Python, OpenCV</td>
-                        <td>Selesai</td>
-                        <td><a href="./src/video/ObjekRecog_ProjectCV2.mp4" target="_blank">Demo</a></td>
-                    </tr>
-                    <tr>
-                        <td class="preview">
-                            <video width="160" muted preload="metadata" controls>
-                                <source src="./src/video/Zetta Tronian Project.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>Zetta Tronian Project</td>
-                        <td>2023</td>
-                        <td>C#, Unity</td>
-                        <td>Selesai</td>
-                        <td><a href="./src/video/Zetta Tronian Project.mp4" target="_blank">Demo</a></td>
-                    </tr>
-                    <tr>
-                        <td class="preview">
-                            <img src="./src/Robot Avoider_Arduino.jpeg" alt="Robot Avoider" class="portfolio-thumb" width="160">
-                        </td>
-                        <td>Robot Avoider</td>
-                        <td>2024</td>
-                        <td>C++, Arduino</td>
-                        <td>Selesai</td>
-                        <td><a href="./src/Robot Avoider_Arduino.jpeg" target="_blank">Demo</a></td>
-                    </tr>
-                    <tr>
-                        <td class="preview">
-                            <img src="./src/tictactoe_cpp_sfml.png" alt="Tic Tac Toe" class="portfolio-thumb" width="160">
-                        </td>
-                        <td>Game Tic Tac Toe</td>
-                        <td>2024</td>
-                        <td>C++, SFML</td>
-                        <td>Selesai</td>
-                        <td><a href="./src/tictactoe_cpp_sfml.png" target="_blank">Demo</a></td>
-                    </tr>
-                    <tr>
-                        <td class="preview">
-                            <img src="./src/TODO_vite.png" alt="Todo App" class="portfolio-thumb" width="160">
-                        </td>
-                        <td>Todo App</td>
-                        <td>2024</td>
-                        <td>Vue.js, Vite</td>
-                        <td>Selesai</td>
-                        <td><a href="./src/TODO_vite.png" target="_blank">Demo</a></td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
+            <header class="section-header">
+                <h1>Portofolio Proyek</h1>
+                <p class="lead">Kumpulan proyek yang dibuat oleh M. Abriiel Afrian Lenry — klik kartu untuk melihat demo atau membuka file.</p>
+            </header>
+
+            <section class="projects-grid">
+                <div class="projects-controls">
+                    <button id="shuffleBtn" class="btn btn-small">Acak Layout</button>
+                    <button id="themeBtn" class="btn btn-small btn-outline">Ganti Tema</button>
+                </div>
+                <!-- Project A -->
+                <article class="project-card" data-year="2023" data-tech="Python, OpenCV" data-id="a">
+                    <div class="media">
+                        <img src="./src/image.png" alt="Image Classifier thumbnail" class="project-image">
+                    </div>
+                    <div class="body">
+                        <h3>Image Classifier</h3>
+                        <p class="meta">2023 &middot; Python, OpenCV</p>
+                        <p class="status">Status: Selesai</p>
+                        <a class="btn btn-small" href="./src/image.png" target="_blank">Lihat Foto</a>
+                    </div>
+                </article>
+
+                <!-- Project B -->
+                <article class="project-card" data-year="2022" data-tech="Unity, C#" data-id="b">
+                    <div class="media">
+                        <img src="./src/projek1.png" alt="Interactive Demo thumbnail" class="project-image">
+                    </div>
+                    <div class="body">
+                        <h3>Interactive 3D Demo</h3>
+                        <p class="meta">2022 &middot; Unity, C#</p>
+                        <p class="status">Status: Selesai</p>
+                        <a class="btn btn-small" href="./src/projek1.png" target="_blank">Lihat Foto</a>
+                    </div>
+                </article>
+
+                <!-- Project C -->
+                <article class="project-card" data-year="2024" data-tech="C++, Robotics" data-id="c">
+                    <div class="media">
+                        <img src="./src/projek2.png" alt="Autonomous Robot thumbnail" class="project-image">
+                    </div>
+                    <div class="body">
+                        <h3>Autonomous Robot</h3>
+                        <p class="meta">2024 &middot; C++, Arduino</p>
+                        <p class="status">Status: Selesai</p>
+                        <a class="btn btn-small" href="./src/projek2.png" target="_blank">Lihat Foto</a>
+                    </div>
+                </article>
+
+                <!-- Project D -->
+                <article class="project-card" data-year="2024" data-tech="C++, SFML" data-id="d">
+                    <div class="media">
+                        <img src="./src/projek3.png" alt="Tic Tac Toe thumbnail" class="project-image">
+                    </div>
+                    <div class="body">
+                        <h3>Tic Tac Toe (C++)</h3>
+                        <p class="meta">2024 &middot; C++, SFML</p>
+                        <p class="status">Status: Selesai</p>
+                        <a class="btn btn-small" href="./src/projek3.png" target="_blank">Lihat Foto</a>
+                    </div>
+                </article>
+
+                <!-- Project E -->
+                <article class="project-card" data-year="2024" data-tech="Vue.js, Vite" data-id="e">
+                    <div class="media">
+                        <img src="./src/projek4.png" alt="Todo App thumbnail" class="project-image">
+                    </div>
+                    <div class="body">
+                        <h3>Todo App (Vue)</h3>
+                        <p class="meta">2024 &middot; Vue.js, Vite</p>
+                        <p class="status">Status: Selesai</p>
+                        <a class="btn btn-small" href="./src/projek4.png" target="_blank">Lihat Foto</a>
+                    </div>
+                </article>
+
+            </section>
         </div>
     </main>
+
+        <script>
+            // Shuffle projects (Fisher-Yates) and re-append
+            function shuffleProjects() {
+                const grid = document.querySelector('.projects-grid');
+                const cards = Array.from(grid.querySelectorAll('.project-card'));
+                for (let i = cards.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [cards[i], cards[j]] = [cards[j], cards[i]];
+                }
+                cards.forEach(c => grid.appendChild(c));
+            }
+
+            // Toggle theme by toggling .alt-theme on body
+            function toggleTheme() {
+                document.body.classList.toggle('alt-theme');
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const shuffleBtn = document.getElementById('shuffleBtn');
+                const themeBtn = document.getElementById('themeBtn');
+                if (shuffleBtn) shuffleBtn.addEventListener('click', shuffleProjects);
+                if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
+            });
+        </script>
 
     <footer>
         <p>&copy; 2024 - <a href="https://www.itpln.ac.id/">ITPLN</a></p>

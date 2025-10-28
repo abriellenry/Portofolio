@@ -21,36 +21,41 @@
 
     <main>
         <div class="container">
-            <h1>Kontak / Request Project</h1>
-            <p class="lead">Isi form di bawah untuk request pembuatan website atau konsultasi teknologi. Kami akan membalas lewat email.</p>
+            <header class="section-header">
+                <h1>Kontak / Request Project</h1>
+                <p class="lead">Ingin bekerja sama atau meminta pembuatan proyek? Isi form sederhana berikut, tim akan menghubungi Anda kembali.</p>
+            </header>
 
-            <form action="#" method="post">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
+            <div class="contact-grid">
+                <form action="#" method="post" class="contact-form">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="service">Jenis Layanan:</label>
-                <select id="service" name="service">
-                    <option value="web-development">Pembuatan Website</option>
-                    <option value="consultation">Konsultasi Teknologi</option>
-                    <option value="review">Review Portofolio</option>
-                </select>
+                    <label for="service">Jenis Layanan:</label>
+                    <select id="service" name="service">
+                        <option value="web-development">Pembuatan Website</option>
+                        <option value="consultation">Konsultasi Teknologi</option>
+                        <option value="review">Review Portofolio</option>
+                    </select>
 
-                <label for="message">Deskripsi Proyek / Pesan:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                    <label for="message">Deskripsi Proyek / Pesan:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
 
-                <fieldset style="border:0;padding:0;margin:0 0 1rem 0">
-                    <legend style="font-weight:600;margin-bottom:.5rem">Preferensi Kontak:</legend>
-                    <label><input type="radio" name="kontak_method" value="email" checked> Email</label>
-                    <label style="margin-left:1rem"><input type="radio" name="kontak_method" value="wa"> WhatsApp</label>
-                </fieldset>
+                    <label class="checkbox-inline"><input type="checkbox" id="terms" name="terms" required> Saya setuju syarat & ketentuan</label>
+                    <button type="submit">Kirim Request</button>
+                </form>
 
-                <label style="display:flex;align-items:center;gap:.5rem"><input type="checkbox" id="terms" name="terms" required> Saya setuju dengan syarat & ketentuan</label>
-
-                <button type="submit">Kirim Request</button>
-            </form>
+                <aside class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <p><strong>M. Abriiel Afrian Lenry</strong><br>NIM: 202431020 &middot; Kelas B</p>
+                    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+                    <p>Lokasi: Institut Teknologi PLN</p>
+                    <p class="muted">Biasanya membalas dalam 1-3 hari kerja.</p>
+                </aside>
+            </div>
         </div>
     </main>
 
